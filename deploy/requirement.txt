@@ -7,3 +7,4 @@ starlette
 google
 librosa
 python-multipart
+protobuf==3.20.1
