@@ -1,0 +1,36 @@
+item {
+  id: 1
+  name: 'melody'
+}
+
+item {
+  id: 2
+  name: 'articulation'
+}
+
+item {
+  id: 3
+  name: 'rhythm_complexity'
+}
+
+item {
+  id: 4
+  name: 'rhythm_stability'
+}
+
+item {
+  id: 5
+  name: 'dissonance'
+}
+
+item {
+  id: 6
+  name: 'atonality'
+}
+
+item {
+  id: 7
+  name: 'mode'
+}
+
+

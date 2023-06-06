@@ -1,0 +1,9 @@
+tensorflow
+matplotlib
+uvicorn
+fastapi
+numpy
+starlette
+google
+librosa
+python-multipart
