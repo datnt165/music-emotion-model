@@ -1,4 +1,5 @@
-tensorflow
+tensorflow==2.11.0
+protobuf==3.19.0
 matplotlib
 uvicorn
 fastapi
@@ -7,4 +8,3 @@ starlette
 google
 librosa
 python-multipart
-protobuf==3.20.1
