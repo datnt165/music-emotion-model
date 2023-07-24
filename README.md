@@ -20,6 +20,10 @@ python3 -m venv venv
 
 ```shell
 source venv\bin\activate
+
+or
+
+source venv/bin/activate
 ```
 
 3. Install the required dependencies by running the following command:
