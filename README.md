@@ -35,5 +35,6 @@ pip install -r requirements_linux.txt
 4. Run
 
 ```shell
-python3 ./deploy/main.py
+cd ./deploy
+uvicorn main:app
 ```
