@@ -9,3 +9,4 @@ google
 librosa
 python-multipart
 essentia
+tensorrt
