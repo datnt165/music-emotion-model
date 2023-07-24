@@ -21,7 +21,7 @@ async def predict_api(file: UploadFile = File(...)):
 
 
     audio = read_audio_file(await file.read())
-    
+
     prediction = predict(audio, file.filename)
 
     # print(prediction)
