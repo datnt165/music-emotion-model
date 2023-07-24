@@ -9,10 +9,10 @@ model = None
 emotion_model = None
 
 def load_model():
-    print("Model loading.....")
+    print("Model: Loading...")
     model = MiddlePredictor(path_to_labels=middle_prediction['path_to_labels'], path_to_model=middle_prediction['path_to_model'])
     emotion_model = EmotionPredictor(path_to_labels=emotion_prediction['path_to_labels'], path_to_model=emotion_prediction['path_to_model'])
-    print("!!! Completed")
+    print("Model: Completed")
 
     return model, emotion_model
 
@@ -46,7 +46,7 @@ def predict(audio_file, name):
     # pitch = audio_processor.extract_pitch()
     # estimate_key = audio_processor.estimate_key()
 
-    return {
+    response = {
         'song': name, 
         'middle_level': middle_feature, 
         'emotion': emotion, 
@@ -69,4 +69,6 @@ def predict(audio_file, name):
         #     'beat_frames': pitch[1], 
         # },
     }
+
+    return response 
 

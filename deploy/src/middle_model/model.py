@@ -37,9 +37,12 @@ class MiddlePredictor(object):
         #     output_tensor = self.interpreter.get_tensor(output_tensor_index)
         #     print(output_tensor)
         #     output_data.append(output_tensor)
-        mapped_data = {}
-        for key, value in self.category_index.items():
-            name = value['name']
-            mapped_data[name] = round(float(output_data[0][key-1]),2)
 
-        return mapped_data, output_data
+        arr_result = []
+        for k, v in self.category_index.items():
+            mapped_data = {}
+            mapped_data['key'] = v['name']
+            mapped_data['value'] = round(float(output_data[0][k-1]),2)
+            arr_result.append(mapped_data)
+            
+        return arr_result, output_data
