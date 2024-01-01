@@ -20,16 +20,25 @@ python3 -m venv venv
 
 ```shell
 source venv\bin\activate
+
+or
+
+source venv/bin/activate
 ```
 
 3. Install the required dependencies by running the following command:
 
 ```shell
 pip install -r requirements.txt
+
+or
+
+pip install -r requirements_linux.txt
 ```
 
 4. Run
 
 ```shell
-python3 ./deploy/main.py
+cd ./deploy
+uvicorn main:app
 ```

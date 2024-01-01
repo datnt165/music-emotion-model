@@ -32,9 +32,11 @@ class EmotionPredictor(object):
 
         output_data = self.interpreter.get_tensor(self.output_details[0]['index'])[0]
 
-        mapped_data = {}
-        for key, value in self.category_index.items():
-            name = value['name']
-            mapped_data[name] = round(float(output_data[key-1]), 2)
+        arr_result = []
+        for k, v in self.category_index.items():
+            mapped_data = {}
+            mapped_data['key'] = v['name']
+            mapped_data['value'] = round(float(output_data[k-1]), 2)
+            arr_result.append(mapped_data)
 
-        return mapped_data
+        return arr_result
